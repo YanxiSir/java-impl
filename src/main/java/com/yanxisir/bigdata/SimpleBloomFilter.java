@@ -3,6 +3,7 @@ package com.yanxisir.bigdata;
 import java.util.BitSet;
 
 /**
+ * 布隆过滤器
  * 传统的Bloom filter 不支持从集合中删除成员。
  * Counting Bloom filter由于采用了计数，因此支持remove操作。
  * 基于BitSet来实现，性能上可能存在问题
