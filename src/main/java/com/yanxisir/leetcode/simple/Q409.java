@@ -1,4 +1,6 @@
-package com.yanxisir.leetcode;
+package com.yanxisir.leetcode.simple;
+
+import com.yanxisir.leetcode.AbstractQ;
 
 /**
  * https://leetcode-cn.com/problems/longest-palindrome/
@@ -7,10 +9,9 @@ package com.yanxisir.leetcode;
  * @Date: 2020/2/4
  * @Sign: 心中田间，木行水上
  */
-public class Q409 implements IQ{
+public class Q409 extends AbstractQ {
 
     @Override
     public void run() {
-        System.out.println("i'm 409");
     }
 }

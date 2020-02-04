@@ -12,13 +12,38 @@ import com.google.common.base.Joiner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        IQ iq = getQ("409");
+        AbstractQ iq = getQ("409");
         iq.run();
     }
 
-    private static IQ getQ(String id) throws Exception {
-        String className = Joiner.on("").join("com.yanxisir.leetcode.", "Q", id);
+
+    private static AbstractQ getQ(String id) throws Exception {
+        try {
+            return getSimpleQ(id);
+        } catch (Exception e) {
+            try {
+                return getMediumQ(id);
+            } catch (Exception e1) {
+                return getHardQ(id);
+            }
+        }
+    }
+
+    private static AbstractQ baseQ(String packagePath, String id) throws Exception {
+        String className = Joiner.on("").join(packagePath, "Q", id);
         Class c = Class.forName(className);
-        return (IQ) c.newInstance();
+        return (AbstractQ) c.newInstance();
+    }
+
+    private static AbstractQ getSimpleQ(String id) throws Exception {
+        return baseQ("com.yanxisir.leetcode.simple.", id);
+    }
+
+    private static AbstractQ getMediumQ(String id) throws Exception {
+        return baseQ("com.yanxisir.leetcode.medium.", id);
+    }
+
+    private static AbstractQ getHardQ(String id) throws Exception {
+        return baseQ("com.yanxisir.leetcode.hard.", id);
     }
 }
