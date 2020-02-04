@@ -27,7 +27,7 @@ package com.yanxisir.knowledge;
  */
 public class ExponentialBackoff {
 
-    private static final int MAX_ACTIVE_TIME = 100;
+    private static final int MAX_ACTIVE_TIME = 10000;
     private static final int MAX_ACTIVE_RETRIES = 6;
 
     public static void main(String[] args) throws Exception {
