@@ -12,12 +12,12 @@ import com.google.common.base.Joiner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        AbstractQ iq = getQ("409");
-        iq.run();
+        Q("409").exec("abccccdd").print();
+        Q("412").exec("15").print();
     }
 
 
-    private static AbstractQ getQ(String id) throws Exception {
+    private static AbstractQ Q(String id) throws Exception {
         try {
             return getSimpleQ(id);
         } catch (Exception e) {
