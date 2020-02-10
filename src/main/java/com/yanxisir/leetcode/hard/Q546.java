@@ -12,7 +12,7 @@ import com.yanxisir.leetcode.AbstractQ;
 public class Q546 extends AbstractQ {
 
     @Override
-    protected Object run(String... args) {
+    protected Object run(Object... args) {
 
         return null;
     }

@@ -13,7 +13,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Q("409").exec("abccccdd").print();
-        Q("412").exec("15").print();
+        Q("412").exec(15).print();
+        Q("414").exec(new int[]{3, 2, 1}).print();
     }
 
 

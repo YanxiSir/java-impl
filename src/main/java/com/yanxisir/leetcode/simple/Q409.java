@@ -16,8 +16,8 @@ import java.util.Map;
 public class Q409 extends AbstractQ {
 
     @Override
-    public Object run(String... args) {
-        String s = args[0];
+    public Object run(Object... args) {
+        String s = String.valueOf(args[0]);
         return solution1(s);
 //        return solution2(s);
     }

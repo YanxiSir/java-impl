@@ -18,9 +18,9 @@ public abstract class AbstractQ {
     /**
      * @param args 请求入参
      */
-    protected abstract Object run(String... args);
+    protected abstract Object run(Object... args);
 
-    protected AbstractQ exec(String... args) {
+    protected AbstractQ exec(Object... args) {
         this.result = run(args);
         return this;
     }

@@ -19,8 +19,8 @@ import java.util.stream.IntStream;
 public class Q412 extends AbstractQ {
 
     @Override
-    protected Object run(String... args) {
-        int n = Integer.valueOf(args[0]);
+    protected Object run(Object... args) {
+        int n = (int) args[0];
 //        return solution1(n);
 //        return solution2(n);
         return solution3(n);
