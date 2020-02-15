@@ -2,6 +2,9 @@ package com.yanxisir.leetcode;
 
 import com.alibaba.fastjson.JSON;
 
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @author: YanxiSir
  * @Date: 2020/2/4
@@ -28,6 +31,15 @@ public abstract class AbstractQ {
     protected void print() {
         System.out.println("result:" + JSON.toJSONString(this.result));
         System.out.println("<-------------- end " + this.getClass().getSimpleName() + " -------------->");
+    }
+
+    /**
+     * 有关联的题
+     *
+     * @return
+     */
+    protected List<Class> related() {
+        return Collections.EMPTY_LIST;
     }
 
 }

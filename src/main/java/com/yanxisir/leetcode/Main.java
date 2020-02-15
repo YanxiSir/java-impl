@@ -1,6 +1,7 @@
 package com.yanxisir.leetcode;
 
 import com.google.common.base.Joiner;
+import com.yanxisir.leetcode.zmodel.TreeNode;
 
 /**
  * leetcode题解入口
@@ -12,9 +13,11 @@ import com.google.common.base.Joiner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Q("409").exec("abccccdd").print();
-        Q("412").exec(15).print();
-        Q("414").exec(new int[]{3, 2, 1}).print();
+//        Q("409").exec("abccccdd").print();
+//        Q("412").exec(15).print();
+//        Q("414").exec(new int[]{3, 2, 1}).print();
+//        Q("101").exec(new TreeNode(1)).print();
+        Q("236").exec(new TreeNode(1), new TreeNode(2), new TreeNode(3)).print();
     }
 
 
