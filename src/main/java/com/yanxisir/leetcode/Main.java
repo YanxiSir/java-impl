@@ -17,9 +17,29 @@ public class Main {
 //        Q("412").exec(15).print();
 //        Q("414").exec(new int[]{3, 2, 1}).print();
 //        Q("101").exec(new TreeNode(1)).print();
-        Q("236").exec(new TreeNode(1), new TreeNode(2), new TreeNode(3)).print();
+//        Q("236").exec(new TreeNode(1), new TreeNode(2), new TreeNode(3)).print();
+        Q("102").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
     }
 
+
+    private static TreeNode array2Tree(Integer[] array) {
+        int len = array.length;
+        if (len == 0) {
+            return null;
+        }
+        return fill(array, 0);
+    }
+
+    private static TreeNode fill(Integer[] array, int cur) {
+        int len = array.length;
+        if (cur >= len || array[cur] == null) {
+            return null;
+        }
+        TreeNode node = new TreeNode(array[cur]);
+        node.left = fill(array, cur * 2 + 1);
+        node.right = fill(array, cur * 2 + 2);
+        return node;
+    }
 
     private static AbstractQ Q(String id) throws Exception {
         try {
