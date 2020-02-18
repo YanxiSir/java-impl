@@ -18,7 +18,9 @@ public class Main {
 //        Q("414").exec(new int[]{3, 2, 1}).print();
 //        Q("101").exec(new TreeNode(1)).print();
 //        Q("236").exec(new TreeNode(1), new TreeNode(2), new TreeNode(3)).print();
-        Q("102").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
+//        Q("102").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
+//        Q("104").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
+        Q("107").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
     }
 
 

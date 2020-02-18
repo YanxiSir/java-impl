@@ -1,6 +1,9 @@
 package com.yanxisir.leetcode.medium;
 
+import com.google.common.collect.Lists;
 import com.yanxisir.leetcode.AbstractQ;
+import com.yanxisir.leetcode.simple.Q107;
+import com.yanxisir.leetcode.zannos.NeedReview;
 import com.yanxisir.leetcode.zannos.Tree;
 import com.yanxisir.leetcode.zmodel.TreeNode;
 
@@ -8,7 +11,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * 二叉树的层次遍历
@@ -19,6 +21,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @Sign: 心中田间，木行水上
  */
 @Tree
+@NeedReview
 public class Q102 extends AbstractQ {
 
     @Override
@@ -28,7 +31,7 @@ public class Q102 extends AbstractQ {
         return solution2(root);
     }
 
-    protected List<List<Integer>> solution1(TreeNode root) {
+    public List<List<Integer>> solution1(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
         if (root == null) {
             return list;
@@ -77,5 +80,10 @@ public class Q102 extends AbstractQ {
         if (node.right != null) {
             helper(node.right, level + 1);
         }
+    }
+
+    @Override
+    protected List<Class> related() {
+        return Lists.newArrayList(Q107.class);
     }
 }
