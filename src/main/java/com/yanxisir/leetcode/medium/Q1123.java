@@ -11,6 +11,7 @@ import com.yanxisir.leetcode.zmodel.TreeNode;
  * @Date: 2020/2/13
  * @Sign: 心中田间，木行水上
  */
+@Deprecated
 public class Q1123 extends AbstractQ {
 
     @Override

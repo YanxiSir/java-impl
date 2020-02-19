@@ -9,6 +9,7 @@ import com.yanxisir.leetcode.AbstractQ;
  * @Date: 2020/2/4
  * @Sign: 心中田间，木行水上
  */
+@Deprecated
 public class Q208 extends AbstractQ {
 
     @Override
