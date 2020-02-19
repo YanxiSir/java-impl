@@ -1,6 +1,7 @@
 package com.yanxisir.leetcode;
 
 import com.google.common.base.Joiner;
+import com.yanxisir.leetcode.zmodel.ListNode;
 import com.yanxisir.leetcode.zmodel.TreeNode;
 
 /**
@@ -21,9 +22,25 @@ public class Main {
 //        Q("102").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
 //        Q("104").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
 //        Q("107").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
-        Q("108").exec(new int[]{-10, -3, 0, 5, 9}).print();
+//        Q("108").exec(new int[]{-10, -3, 0, 5, 9}).print();
+        Q("109").exec(array2Linked(new Integer[]{-10, -3, 0, 5, 9})).print();
     }
 
+
+    private static ListNode array2Linked(Integer[] array) {
+        int len = array.length;
+        if (len == 0) {
+            return null;
+        }
+        ListNode root = new ListNode(array[0]);
+        ListNode cur = root;
+        for (int i = 1; i < len; i++) {
+            ListNode node = new ListNode(array[i]);
+            cur.next = node;
+            cur = node;
+        }
+        return root;
+    }
 
     private static TreeNode array2Tree(Integer[] array) {
         int len = array.length;
