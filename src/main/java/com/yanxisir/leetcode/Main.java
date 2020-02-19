@@ -23,7 +23,9 @@ public class Main {
 //        Q("104").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
 //        Q("107").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
 //        Q("108").exec(new int[]{-10, -3, 0, 5, 9}).print();
-        Q("109").exec(array2Linked(new Integer[]{-10, -3, 0, 5, 9})).print();
+//        Q("109").exec(array2Linked(new Integer[]{-10, -3, 0, 5, 9})).print();
+        Q("110").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
+
     }
 
 

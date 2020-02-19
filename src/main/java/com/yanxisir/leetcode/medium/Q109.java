@@ -50,10 +50,10 @@ public class Q109 extends AbstractQ {
     }
 
     private TreeNode list2Tree(ListNode node) {
-        ListNode middleNode = findMiddleNode(node);
-        if (middleNode == null) {
+        if(node==null){
             return null;
         }
+        ListNode middleNode = findMiddleNode(node);
         TreeNode treeNode = new TreeNode(middleNode.val);
         if (node == middleNode) {
             return treeNode;
