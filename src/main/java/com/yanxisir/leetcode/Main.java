@@ -25,7 +25,15 @@ public class Main {
 //        Q("108").exec(new int[]{-10, -3, 0, 5, 9}).print();
 //        Q("109").exec(array2Linked(new Integer[]{-10, -3, 0, 5, 9})).print();
 //        Q("110").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
-        Q("617").exec(array2Tree(new Integer[]{1, 3, 2, 5}), array2Tree(new Integer[]{2, 1, 3, null, 4, null, 7})).print();
+//        Q("617").exec(array2Tree(new Integer[]{1, 3, 2, 5}), array2Tree(new Integer[]{2, 1, 3, null, 4, null, 7})).print();
+//        Q("94").exec(array2Tree(new Integer[]{1, null, 2, 3})).print();
+//        Q("166").exec(-1, 1).print();
+//        Q("543").exec(array2Tree(new Integer[]{3, 9, 20, null, null, 15, 7})).print();
+//        Q("19").exec(array2Linked(new Integer[]{1, 2}), 2).print();
+//        Q("53").exec(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}).print();
+//        Q("70").exec(6).print();
+        Q("234").exec(array2Linked(new Integer[]{1, 2, 2,2,1})).print();
+
 
     }
 
