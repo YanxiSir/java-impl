@@ -32,7 +32,9 @@ public class Main {
 //        Q("19").exec(array2Linked(new Integer[]{1, 2}), 2).print();
 //        Q("53").exec(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}).print();
 //        Q("70").exec(6).print();
-        Q("234").exec(array2Linked(new Integer[]{1, 2, 2,2,1})).print();
+//        Q("234").exec(array2Linked(new Integer[]{1, 2, 2,2,1})).print();
+//        Q("198").exec(new int[]{2, 1, 1, 2}).print();
+        Q("121").exec(new int[]{2, 1, 1, 2}).print();
 
 
     }
