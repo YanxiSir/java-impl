@@ -13,7 +13,6 @@ import java.util.Stack;
  * @Date: 2020/3/5
  * @Sign: 心中田间，木行水上
  */
-@Deprecated
 public class Q19 extends AbstractQ {
 
     @Override
@@ -54,12 +53,55 @@ public class Q19 extends AbstractQ {
     }
 
     // 两次遍历
-    private Object solution2(ListNode head, int n){
-        return null;
+    private Object solution2(ListNode head, int n) {
+        // 第一遍：求出栈的长度，转换问题
+        if (head == null || head.next == null) {
+            return null;
+        }
+        int len = 0;
+        ListNode tmpNode = head;
+        while (tmpNode != null) {
+            len++;
+            tmpNode = tmpNode.next;
+        }
+        int delPos = len + 1 - n;
+        if (delPos == 1) {
+            return head.next;
+        }
+        int cur = 1;
+        tmpNode = head;
+        while (tmpNode != null) {
+            if (cur == delPos - 1) {
+                tmpNode.next = tmpNode.next.next;
+                break;
+            }
+            tmpNode = tmpNode.next;
+            cur++;
+        }
+        return head;
     }
 
     // 一次遍历，双指针
-    private Object solution3(ListNode head, int n){
-        return null;
+    private Object solution3(ListNode head, int n) {
+        // 1,2,3,4,5       , 删除倒数第2个
+        if (head == null || head.next == null) {
+            return null;
+        }
+        ListNode slowPre = null;
+        ListNode slow = head;
+        ListNode fast = head;
+        for (int i = 0; i < n; i++) {
+            fast = fast.next;
+        }
+        while (fast != null) {
+            slowPre = slow;
+            slow = slow.next;
+            fast = fast.next;
+        }
+        if (slowPre == null) {
+            return slow.next;
+        }
+        slowPre.next = slow.next;
+        return head;
     }
 }
