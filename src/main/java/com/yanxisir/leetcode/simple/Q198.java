@@ -1,7 +1,11 @@
 package com.yanxisir.leetcode.simple;
 
+import com.google.common.collect.Lists;
 import com.yanxisir.leetcode.AbstractQ;
+import com.yanxisir.leetcode.medium.Q213;
 import com.yanxisir.leetcode.zannos.DynamicPrograming;
+
+import java.util.List;
 
 /**
  * 打家劫舍
@@ -46,5 +50,10 @@ public class Q198 extends AbstractQ {
             pre = tmp;
         }
         return cur;
+    }
+
+    @Override
+    protected List<Class> related() {
+        return Lists.newArrayList(Q213.class);
     }
 }

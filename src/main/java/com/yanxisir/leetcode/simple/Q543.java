@@ -29,7 +29,7 @@ public class Q543 extends AbstractQ {
             return 0;
         }
         nodeDepth(root);
-        return depth - 1;
+        return depth ;
     }
 
     private int nodeDepth(TreeNode node) {
@@ -38,7 +38,7 @@ public class Q543 extends AbstractQ {
         }
         int l = nodeDepth(node.left);
         int r = nodeDepth(node.right);
-        depth = Math.max(depth, l + r + 1);
+        depth = Math.max(depth, l + r );
         return 1 + Math.max(l, r);
     }
 }

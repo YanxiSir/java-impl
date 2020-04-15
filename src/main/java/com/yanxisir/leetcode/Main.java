@@ -1,6 +1,7 @@
 package com.yanxisir.leetcode;
 
 import com.google.common.base.Joiner;
+import com.google.common.collect.Lists;
 import com.yanxisir.leetcode.zmodel.ListNode;
 import com.yanxisir.leetcode.zmodel.TreeNode;
 
@@ -37,7 +38,12 @@ public class Main {
 //        Q("121").exec(new int[]{2, 1, 1, 2}).print();
 //        Q("445").exec(array2Linked(new Integer[]{1}), array2Linked(new Integer[]{9,9})).print();
 //        Q("62").exec(7, 3).print();
-        Q("63").exec(new int[][]{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}).print();
+//        Q("63").exec(new int[][]{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}).print();
+//        Q("120").exec(Lists.newArrayList(Lists.newArrayList(2), Lists.newArrayList(3, 4), Lists.newArrayList(6, 5, 7), Lists.newArrayList(4, 1, 8, 3))).print();
+//        Q("144").exec(array2Tree(new Integer[]{1, null, 2, 3})).print();
+//        Q("152").exec(new int[]{-2, 0, -1}).print();
+//        Q("153").exec(new int[]{1, 2}).print();
+        Q("213").exec(new int[]{2, 1, 1, 2}).print();
 
 
     }
