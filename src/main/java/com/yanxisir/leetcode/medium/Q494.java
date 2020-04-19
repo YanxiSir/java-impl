@@ -1,0 +1,9 @@
+package com.yanxisir.leetcode.medium;
+
+/**
+ * @author: YanxiSir
+ * @Date: 2020/4/16
+ * @Sign: 心中田间，木行水上
+ */
+public class Q494 {
+}
