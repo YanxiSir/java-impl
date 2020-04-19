@@ -43,7 +43,14 @@ public class Main {
 //        Q("144").exec(array2Tree(new Integer[]{1, null, 2, 3})).print();
 //        Q("152").exec(new int[]{-2, 0, -1}).print();
 //        Q("153").exec(new int[]{1, 2}).print();
-        Q("213").exec(new int[]{2, 1, 1, 2}).print();
+//        Q("213").exec(new int[]{2, 1, 1, 2}).print();
+//        Q("260").exec(new int[]{2, 1, 2, 3, 4, 1}).print();
+//        Q("377").exec(new int[]{1, 2, 3}, 4).print();
+//        Q("39").exec(new int[]{2, 3, 6, 7}, 7).print();
+//        Q("40").exec(new int[]{10, 1, 2, 7, 6, 1, 5}, 8).print();
+//        Q("77").exec(4, 2).print();
+//        Q("216").exec(3, 9).print();
+        Q("112").exec(array2Tree(new Integer[]{1, 2}), 1).print();
 
 
     }
