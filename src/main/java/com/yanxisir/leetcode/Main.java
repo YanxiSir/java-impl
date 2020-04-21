@@ -50,7 +50,9 @@ public class Main {
 //        Q("40").exec(new int[]{10, 1, 2, 7, 6, 1, 5}, 8).print();
 //        Q("77").exec(4, 2).print();
 //        Q("216").exec(3, 9).print();
-        Q("112").exec(array2Tree(new Integer[]{1, 2}), 1).print();
+//        Q("112").exec(array2Tree(new Integer[]{1, 2}), 1).print();
+//        Q("17").exec("23").print();
+        Q("257").exec(array2Tree(new Integer[]{1, 2, 3})).print();
 
 
     }
