@@ -27,48 +27,50 @@ public class Q208 extends AbstractQ {
 
         return null;
     }
-}
 
-class Trie {
 
-    Map<String, Integer> map = null;
+    class Trie {
 
-    /**
-     * Initialize your data structure here.
-     */
-    public Trie() {
-        map = new HashMap<>();
-    }
+        Map<String, Integer> map = null;
 
-    /**
-     * Inserts a word into the trie.
-     */
-    public void insert(String word) {
-        if (word == null || word == "") {
-            return;
+        /**
+         * Initialize your data structure here.
+         */
+        public Trie() {
+            map = new HashMap<>();
         }
-        map.put(word, 1);
-    }
 
-    /**
-     * Returns if the word is in the trie.
-     */
-    public boolean search(String word) {
-        return map.containsKey(word);
-    }
+        /**
+         * Inserts a word into the trie.
+         */
+        public void insert(String word) {
+            if (word == null || word == "") {
+                return;
+            }
+            map.put(word, 1);
+        }
 
-    /**
-     * Returns if there is any word in the trie that starts with the given prefix.
-     */
-    public boolean startsWith(String prefix) {
-        if (prefix == null || prefix == "") {
+        /**
+         * Returns if the word is in the trie.
+         */
+        public boolean search(String word) {
+            return map.containsKey(word);
+        }
+
+        /**
+         * Returns if there is any word in the trie that starts with the given prefix.
+         */
+        public boolean startsWith(String prefix) {
+            if (prefix == null || prefix == "") {
+                return false;
+            }
+            for (Map.Entry<String, Integer> entry : map.entrySet()) {
+                if (entry.getKey().startsWith(prefix)) {
+                    return true;
+                }
+            }
             return false;
         }
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            if (entry.getKey().startsWith(prefix)) {
-                return true;
-            }
-        }
-        return false;
     }
 }
+
