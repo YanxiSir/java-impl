@@ -1,6 +1,8 @@
 package com.yanxisir.leetcode.medium;
 
 import com.yanxisir.leetcode.AbstractQ;
+import com.yanxisir.leetcode.zannos.DynamicPrograming;
+import com.yanxisir.leetcode.zannos.Tag;
 
 /**
  * 买卖股票的最佳时机含手续费
@@ -10,7 +12,8 @@ import com.yanxisir.leetcode.AbstractQ;
  * @Date: 2020/2/21
  * @Sign: 心中田间，木行水上
  */
-@Deprecated
+@Tag("股票")
+@DynamicPrograming
 public class Q714 extends AbstractQ {
     @Override
     protected Object run(Object... args) {
@@ -20,6 +23,12 @@ public class Q714 extends AbstractQ {
     }
 
     protected int solution1(int[] prices, int fee) {
-        return 0;
+
+        int noHold = 0, hold = -prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            noHold = Math.max(noHold, hold + prices[i] - fee);
+            hold = Math.max(hold, noHold - prices[i]);
+        }
+        return noHold;
     }
 }

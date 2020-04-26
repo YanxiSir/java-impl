@@ -2,6 +2,7 @@ package com.yanxisir.leetcode.simple;
 
 import com.google.common.collect.Lists;
 import com.yanxisir.leetcode.AbstractQ;
+import com.yanxisir.leetcode.medium.Q714;
 import com.yanxisir.leetcode.zannos.Remember;
 
 import java.util.List;
@@ -39,6 +40,6 @@ public class Q121 extends AbstractQ {
 
     @Override
     protected List<Class> related() {
-        return Lists.newArrayList(Q122.class);
+        return Lists.newArrayList(Q122.class, Q714.class);
     }
 }
