@@ -17,6 +17,6 @@ public class SimpleZigzag {
     }
 
     public static void t() {
-
+        System.out.println(6657486331354661870L%1024);
     }
 }
