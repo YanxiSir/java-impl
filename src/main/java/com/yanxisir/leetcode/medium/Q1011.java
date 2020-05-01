@@ -1,6 +1,7 @@
 package com.yanxisir.leetcode.medium;
 
 import com.yanxisir.leetcode.AbstractQ;
+import com.yanxisir.leetcode.zannos.Tag;
 
 /**
  * 在 D 天内送达包裹的能力
@@ -10,7 +11,7 @@ import com.yanxisir.leetcode.AbstractQ;
  * @date: 2020/5/1
  * @sign: help yourself
  */
-@Deprecated
+@Tag("二分")
 public class Q1011 extends AbstractQ {
 
     @Override
