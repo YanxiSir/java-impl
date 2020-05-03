@@ -52,7 +52,9 @@ public class Main {
 //        Q("216").exec(3, 9).print();
 //        Q("112").exec(array2Tree(new Integer[]{1, 2}), 1).print();
 //        Q("17").exec("23").print();
-        Q("257").exec(array2Tree(new Integer[]{1, 2, 3})).print();
+//        Q("257").exec(array2Tree(new Integer[]{1, 2, 3})).print();
+//        Q("3").exec("pwwkew").print();
+        Q("5").exec("abcdz").print();
 
 
     }
