@@ -1,6 +1,7 @@
 package com.yanxisir.leetcode.hard;
 
 import com.yanxisir.leetcode.AbstractQ;
+import com.yanxisir.leetcode.zannos.Remember;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,7 +14,7 @@ import java.util.Set;
  * @Date: 2020/4/12
  * @Sign: 心中田间，木行水上
  */
-@Deprecated
+@Remember
 public class Q128 extends AbstractQ {
 
     @Override
