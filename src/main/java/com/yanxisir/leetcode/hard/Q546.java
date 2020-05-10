@@ -3,6 +3,7 @@ package com.yanxisir.leetcode.hard;
 import com.yanxisir.leetcode.AbstractQ;
 
 /**
+ * 移除盒子
  * https://leetcode-cn.com/problems/remove-boxes/
  *
  * @author: YanxiSir
