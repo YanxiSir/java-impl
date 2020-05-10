@@ -54,7 +54,8 @@ public class Main {
 //        Q("17").exec("23").print();
 //        Q("257").exec(array2Tree(new Integer[]{1, 2, 3})).print();
 //        Q("3").exec("pwwkew").print();
-        Q("5").exec("abcdz").print();
+//        Q("5").exec("abcdz").print();
+        Q("912").exec(new int[]{5, 2, 3, 1}).print();
 
 
     }
