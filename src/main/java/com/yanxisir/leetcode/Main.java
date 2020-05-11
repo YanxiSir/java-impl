@@ -55,7 +55,8 @@ public class Main {
 //        Q("257").exec(array2Tree(new Integer[]{1, 2, 3})).print();
 //        Q("3").exec("pwwkew").print();
 //        Q("5").exec("abcdz").print();
-        Q("912").exec(new int[]{5, 2, 3, 1}).print();
+//        Q("912").exec(new int[]{5, 2, 3, 1}).print();
+        Q("54").exec(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}).print();
 
 
     }
