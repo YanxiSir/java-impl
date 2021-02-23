@@ -4,6 +4,11 @@ import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 import com.yanxisir.leetcode.zmodel.ListNode;
 import com.yanxisir.leetcode.zmodel.TreeNode;
+import io.swagger.models.auth.In;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.IntFunction;
 
 /**
  * leetcode题解入口
@@ -56,7 +61,8 @@ public class Main {
 //        Q("3").exec("pwwkew").print();
 //        Q("5").exec("abcdz").print();
 //        Q("912").exec(new int[]{5, 2, 3, 1}).print();
-        Q("54").exec(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}).print();
+//        Q("54").exec(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}).print();
+        Q("2").exec(array2Linked(new Integer[]{9, 9, 9, 9, 9, 9, 9}), array2Linked(new Integer[]{9, 9, 9, 9})).print();
 
 
     }
@@ -75,6 +81,15 @@ public class Main {
             cur = node;
         }
         return root;
+    }
+
+    private static Integer[] linked2Array(ListNode node) {
+        List<Integer> result = Lists.newArrayList();
+        while (node != null) {
+            result.add(node.val);
+            node = node.next;
+        }
+        return result.stream().toArray(value -> new Integer[0]);
     }
 
     private static TreeNode array2Tree(Integer[] array) {
