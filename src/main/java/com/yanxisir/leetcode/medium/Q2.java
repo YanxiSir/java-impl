@@ -3,7 +3,10 @@ package com.yanxisir.leetcode.medium;
 import com.yanxisir.leetcode.AbstractQ;
 import com.yanxisir.leetcode.zmodel.ListNode;
 
-
+/**
+ * 两数相加
+ * https://leetcode-cn.com/problems/add-two-numbers/
+ */
 public class Q2 extends AbstractQ {
 
     @Override
