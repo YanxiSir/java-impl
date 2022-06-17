@@ -18,7 +18,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <swagger.version>2.6.1</swagger.version>
         <guava.version>23.0</guava.version>
-        <fastjson.version>1.2.41</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <joda.version>2.9.7</joda.version>
         <lombok.version>1.16.16</lombok.version>
         <dozer.version>5.5.1</dozer.version>
